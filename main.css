@@ -1,0 +1,98 @@
+body{
+    font-family: "Comic Sans MS", cursive;
+    padding: 10vh 0 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-image: url("assets/grasslands4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Button1{
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid black;
+    border-radius: 25px;
+    margin: 3vh;
+    height: 10vh;
+    width: 15vw;
+    font-size: 2rem;
+}
+
+.gamecontainer h1{
+    text-align: center;
+}
+
+.ImgContainer img{
+    width: 18vw;
+    max-width: 100%;
+}
+
+.ImgContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.gamecontainer{
+    background: white;
+    width: 40vw;
+    height: 85vh;
+    border: 5px solid black;
+    border-radius: 25px;
+}
+
+.Stats div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    width: 98%;
+    margin: 5px;
+}
+
+.HPStat{
+    background: lightcoral;
+}
+
+.HungerStat{
+    background: saddlebrown;
+}
+
+.OBStat{
+    background: darkred;
+}
+
+.ERStat{
+    background: forestgreen;
+}
+
+.FunStat{
+    background: royalblue;
+}
+
+#FeedButton{
+    background: saddlebrown;
+}
+
+#RestButton{
+    background: forestgreen;
+}
+
+#PlayButton{
+    background: royalblue;
+}
+
+#KillButton{
+    background: darkred;
+}
