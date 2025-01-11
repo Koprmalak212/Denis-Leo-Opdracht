@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="Buttons">
-    <div class="Button1" id="FeedButton">Feed</div>
+    <div class="Button1" id="FeedButton" onclick="increaseHunger(10)">Feed</div>
     <div class="Button1" id="RestButton">Rest</div>
 </div>
 
@@ -28,11 +28,11 @@
         <div class="HPStat">
             HP: 100/100
         </div>
-        <div class="HungerStat">
+        <div class="HungerStat" id="HungerStat">
             Hunger: 100/100
         </div>
-        <div class="OBStat">
-            Obesity: 100/100
+        <div class="OBStat" id="ObesityStat">
+            Obesity: 0/100
         </div>
         <div class="ERStat">
             Energy: 100/100
@@ -49,5 +49,13 @@
     <div class="Button1" id="KillButton">Kill ;)</div>
 </div>
 
+<script src="scripts/Hunger.js"></script>
+
+<script>
+
+</script>
+
 </body>
+
+
 </html>

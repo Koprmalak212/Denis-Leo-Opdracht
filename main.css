@@ -34,7 +34,7 @@ body{
 }
 
 .ImgContainer img{
-    width: 18vw;
+    width: fit-content;
     max-width: 100%;
 }
 
@@ -44,7 +44,7 @@ body{
 }
 
 .gamecontainer{
-    background: white;
+    backdrop-filter: blur(10px);
     width: 40vw;
     height: 85vh;
     border: 5px solid black;
@@ -70,7 +70,7 @@ body{
 }
 
 .OBStat{
-    background: darkred;
+    background: #ba2e38;
 }
 
 .ERStat{
@@ -84,6 +84,11 @@ body{
 #FeedButton{
     background: saddlebrown;
 }
+
+#FeedButton:hover{
+    cursor: pointer;
+}
+
 
 #RestButton{
     background: forestgreen;
