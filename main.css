@@ -4,7 +4,7 @@ body{
     margin: 0;
     display: flex;
     justify-content: center;
-    background-image: url("assets/grasslands4.jpg");
+    background-image: url("assets/farmfield.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -34,7 +34,7 @@ body{
 }
 
 .ImgContainer img{
-    width: fit-content;
+    width: 25vw;
     max-width: 100%;
 }
 
@@ -51,18 +51,22 @@ body{
     border-radius: 25px;
 }
 
+
+
 .Stats div{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     border: 2px solid black;
+    border-radius: 25px;
     width: 98%;
     margin: 5px;
+    font-size: 1.5rem;
 }
 
 .HPStat{
-    background: lightcoral;
+    background: linear-gradient(to right, #f196a4 80%, #ac7a7a 20%);
 }
 
 .HungerStat{
