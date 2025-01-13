@@ -35,6 +35,7 @@ setInterval(function() {
 
 // Brainrot addiction
 
+
 function increaseBrainRot(amount) {
     currentBrainrot = Math.min(100, currentBrainrot + amount);
     BrainRotDiv.innerText = `BrainRot: ${  currentBrainrot}/${maxBrainrot}`;
