@@ -105,3 +105,15 @@ body{
 #KillButton{
     background: darkred;
 }
+
+.messageBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 10vh;
+    width: 20vw;
+    top: 25vh;
+    right: 25vw;
+}

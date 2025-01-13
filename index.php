@@ -44,12 +44,26 @@
 
 </div>
 
+<div class="messageBox">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100" width="300" height="100">
+        <!-- Main bubble -->
+        <path d="M10 10 h260 a20 20 0 0 1 20 20 v40 a20 20 0 0 1 -20 20 h-160 l-30 20 v-20 h-70 a20 20 0 0 1 -20 -20 v-40 a20 20 0 0 1 20 -20 z"
+              fill="#d1f1ff" stroke="#a7e0ff" stroke-width="2"/>
+        <!-- Text inside the bubble -->
+        <text  id="message"  x="20" y="55" font-size="24" font-family="Arial, sans-serif" fill="#000">
+
+        </text>
+    </svg>
+
+</div>
+
 <div class="Buttons">
     <div class="Button1" id="PlayButton">Play</div>
     <div class="Button1" id="KillButton">Kill ;)</div>
 </div>
 
 <script src="scripts/Hunger.js"></script>
+<script src="scripts/message.js"></script>
 
 <script>
 
