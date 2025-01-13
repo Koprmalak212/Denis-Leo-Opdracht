@@ -41,18 +41,20 @@
             Fun: 100/100
         </div>
         <div class="BrainRot" id="BrainRot">
-            BrainRot: 100/100
+            BrainRot: 0/100
         </div>
     </div>
 
 </div>
 
 <div class="Buttons">
-    <div class="Button1" id="PlayButton">Play</div>
-    <div class="Button1" id="KillButton">Kill ;)</div>
+    <div class="Button1" id="PlayButton" onclick="increaseFun(10)" >Play</div>
+    <div class="Button1" id="KillButton">Kill ;</div>
+
 </div>
 
 <script src="scripts/Hunger.js"></script>
+<script src="scripts/Fun.js" ></script>
 
 <script>
 
