@@ -37,8 +37,11 @@
         <div class="ERStat">
             Energy: 100/100
         </div>
-        <div class="FunStat">
+        <div class="FunStat" id="FunStat">
             Fun: 100/100
+        </div>
+        <div class="BrainRot" id="BrainRot">
+            BrainRot: 100/100
         </div>
     </div>
 
