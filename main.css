@@ -107,8 +107,18 @@ body{
     background: forestgreen;
 }
 
+#RestButton:hover{
+    cursor: pointer;
+
+}
+
+
 #PlayButton{
     background: royalblue;
+}
+
+#PlayButton:hover{
+    cursor: pointer;
 }
 
 #KillButton{

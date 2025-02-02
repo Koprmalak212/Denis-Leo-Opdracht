@@ -22,10 +22,12 @@ function decreaseHunger(amount) {
 
 // Feed the potato
 function increaseHunger(amount) {
+    if (CurrentHP !== 0 ){
     currentHunger = Math.min(100, currentHunger + amount);
     hungerStatDiv.innerText = `Hunger: ${currentHunger}/${MaxHunger}`;
-    console.log("New Hunger: " + currentHunger);
-    if (currentHunger >= 80) {
+    console.log("New Hunger: " + currentHunger);}
+
+   else if (currentHunger >= 80) {
         increaseObesity(5);
 
 }

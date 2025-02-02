@@ -17,10 +17,14 @@ function decreaseEnergy(amount) {
 
 // Increase Energy
 function increaseEnergy(amount) {
+    if (CurrentHP !== 0 ){
     currentEnergy = Math.min(100, currentEnergy + amount);
     EnergyStatDiv.innerText = `Energy: ${currentEnergy}/${maxEnergy}`;
-    console.log("New Energy: " + currentEnergy);
+    console.log("New Energy: " + currentEnergy);}
 }
+
+
+
 
 // Decrease Energy at intervals
 setInterval(function() {

@@ -23,17 +23,19 @@ function decreaseFun(amount) {
 
 // Feed the potato
 function increaseFun(amount) {
+    if (CurrentHP !== 0 ){
     currentFun = Math.min(100, currentFun + amount);
     FunStatDiv.innerText = `Fun: ${currentFun}/${MaxFun}`;
-    console.log("New Fun: " + currentFun);
-    if (currentFun >= 80) {
+    console.log("New Fun: " + currentFun);}
+    else  if (currentFun >= 80) {
         increaseBrainRot(5);
     }
 }
 
 // No more fun
 setInterval(function() {
-    decreaseFun(1);
+    decreaseFun(1)
+    decrease_BrainRot();
 }, 200);
 
 // Brainrot addiction
@@ -59,8 +61,16 @@ function ShutDownImminent() {
     }
 }
 
-function whileFun(){
-    while (currentFun !== 0){
+function decrease_BrainRot() {
+    if (currentFun < 30 && currentBrainrot !== 0) {
+        currentBrainrot--
+        BrainRotDiv.innerText = `BrainRot: ${currentBrainrot}/${maxBrainrot}`;
 
+    } else if (currentBrainrot === 0) {
+        document.getElementById("BrainRot").style.display = "none";
     }
 }
+
+
+
+

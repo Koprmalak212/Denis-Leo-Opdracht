@@ -50,7 +50,7 @@
 
 <div class="Buttons">
     <div class="Button1" id="PlayButton" onclick="increaseFun(10)" >Play</div>
-    <div class="Button1" id="KillButton">Kill ;</div>
+    <div class="Button1" id="KillButton" onclick="Alert()">Kill ;</div>
 
 </div>
 
@@ -73,7 +73,7 @@
 <script src="scripts/EnergyBar.js"></script>
 <script src="scripts/Central_Image_Handler.js"></script>
 <script src="scripts/Health_Decrease.js"></script>
-
+<script src="scripts/Kill.js"></script>
 <script>
 
 </script>
