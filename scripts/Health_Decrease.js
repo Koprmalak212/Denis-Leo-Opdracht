@@ -4,19 +4,28 @@ let MaxHP = 100
 const HealthStatDiv = document.getElementById("HPStat")
 const CheckForNul = document.getElementById("Check_For_Nul")
 
+
+
 CheckForNul.setAttribute("Nul","0")
 console.log(CheckForNul.getAttribute("Nul"))
 
 HealthStatDiv.innerText = `HP: ${CurrentHP}/${MaxHP}`;
 
 function DecreaseHP(amount){
+    let hpPercentage = (CurrentHP / MaxHP) * 100;
     CurrentHP = Math.max(0,CurrentHP - amount)
     HealthStatDiv.innerText = `HP: ${CurrentHP}/${MaxHP}`;
+
+    HealthStatDiv.style.background = `linear-gradient(to right, #f196a4 ${hpPercentage}%, #ac7a7a ${hpPercentage}%)`;
+
 }
 
 setInterval(function (){
     if (currentEnergy === 0 && currentHunger === 0 && currentFun === 0) {
         DecreaseHP(5);
+
+
+
     } else if (currentEnergy === 0 && currentHunger === 0) {
         DecreaseHP(3);
     } else if (currentEnergy === 0 && currentFun === 0) {

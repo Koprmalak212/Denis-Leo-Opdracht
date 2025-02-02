@@ -71,7 +71,7 @@ body{
 }
 
 .HPStat{
-    background: linear-gradient(to right, #f196a4 80%, #ac7a7a 20%);
+    background: linear-gradient(to right, #f196a4 100%, #ac7a7a 0%);
 }
 
 .HungerStat{
@@ -83,11 +83,11 @@ body{
 }
 
 .ERStat{
-    background: forestgreen;
+    background: linear-gradient(to right, #228B22 100%, #ac7a7a 0%);
 }
 
 .FunStat{
-    background: royalblue;
+    background: #4169E1;
 }
 
 .BrainRot{

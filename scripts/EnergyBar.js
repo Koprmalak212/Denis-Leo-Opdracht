@@ -11,6 +11,9 @@ EnergyStatDiv.innerText = `Energy: ${currentEnergy}/${maxEnergy}`;
 
 // Decrease Energy over time
 function decreaseEnergy(amount) {
+    let EnergyPercentage = (currentEnergy / maxEnergy) * 100;
+    EnergyStatDiv.style.background = `linear-gradient(to right, #228B22
+     ${EnergyPercentage}%, #ac7a7a ${EnergyPercentage}%)`;
     currentEnergy = Math.max(0, currentEnergy - amount);
     EnergyStatDiv.innerText = `Energy: ${currentEnergy}/${maxEnergy}`;
 }

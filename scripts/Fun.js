@@ -17,6 +17,11 @@ FunStatDiv.innerText = `Hunger: ${currentFun}/${MaxFun}`;
 
 // Make them watch paint dry in real time
 function decreaseFun(amount) {
+    let FunPercentage = (currentFun / MaxFun) * 100;
+    FunStatDiv.style.background = `linear-gradient(to right, #4169E1
+     ${FunPercentage}%, #ac7a7a ${FunPercentage}%)`;
+
+
     currentFun = Math.max (0, currentFun - amount);
     FunStatDiv.innerText = `Fun: ${currentFun}/${MaxFun}`;
 }

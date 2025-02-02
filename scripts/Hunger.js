@@ -15,6 +15,11 @@ hungerStatDiv.innerText = `Hunger: ${currentHunger}/${MaxHunger}`;
 
 // Starve the mfkr
 function decreaseHunger(amount) {
+    let HungerPercentage = (currentHunger / MaxHunger) * 100;
+    hungerStatDiv.style.background = `linear-gradient(to right, #8B4513
+     ${HungerPercentage}%, #ac7a7a ${HungerPercentage}%)`;
+
+
     currentHunger = Math.max (0, currentHunger - amount);
     hungerStatDiv.innerText = `Hunger: ${currentHunger}/${MaxHunger}`;
 
