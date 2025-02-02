@@ -10,7 +10,7 @@
 <body>
 <div class="Buttons">
     <div class="Button1" id="FeedButton" onclick="increaseHunger(10)">Feed</div>
-    <div class="Button1" id="RestButton">Rest</div>
+    <div class="Button1" id="RestButton" onclick="increaseEnergy()">Rest</div>
 </div>
 
 <div class="gamecontainer">
@@ -19,8 +19,8 @@
     <h1>Keep Potato-Head Alive!🥔</h1>
 
     <!--    Tamagotchi Image-->
-    <div class="ImgContainer">
-        <img src="assets/potatohead.png" alt="">
+    <div class="ImgContainer" >
+        <img src="P_Assets/Happy_Potato.png" alt="" id="Image">
     </div>
 
     <!--Stat divs-->
@@ -34,7 +34,7 @@
         <div class="OBStat" id="ObesityStat">
             Obesity: 0/100
         </div>
-        <div class="ERStat">
+        <div class="ERStat" id="EnergyStat">
             Energy: 100/100
         </div>
         <div class="FunStat" id="FunStat">
@@ -69,6 +69,8 @@
 <script src="scripts/Hunger.js"></script>
 <script src="scripts/Fun.js" ></script>
 <script src="scripts/message.js"></script>
+<script src="scripts/EnergyBar.js"></script>
+<script src="scripts/Central_Image_Handler.js"></script>
 
 <script>
 

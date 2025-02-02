@@ -42,6 +42,7 @@ body{
 .ImgContainer{
     display: flex;
     justify-content: center;
+    background-image: none;
 }
 
 .gamecontainer{
