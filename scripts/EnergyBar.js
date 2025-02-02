@@ -5,6 +5,7 @@ let maxEnergy = 100;
 // Select the div
 const EnergyStatDiv = document.getElementById("EnergyStat");
 
+
 // Update Energy with hardcoded logic
 EnergyStatDiv.innerText = `Energy: ${currentEnergy}/${maxEnergy}`;
 

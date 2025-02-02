@@ -9,6 +9,9 @@ let maxBrainrot = 100;
 // Select that fucking div
 const FunStatDiv = document.getElementById("FunStat")
 const BrainRotDiv = document.getElementById("BrainRot")
+
+
+
 // Update Fun with hardcoded logic
 FunStatDiv.innerText = `Hunger: ${currentFun}/${MaxFun}`;
 

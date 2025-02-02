@@ -10,10 +10,11 @@
 <body>
 <div class="Buttons">
     <div class="Button1" id="FeedButton" onclick="increaseHunger(10)">Feed</div>
-    <div class="Button1" id="RestButton" onclick="increaseEnergy()">Rest</div>
+    <div class="Button1" id="RestButton" onclick="increaseEnergy(10)">Rest</div>
 </div>
 
-<div class="gamecontainer">
+<!-- This checks to see how many stats are at 0 -->
+<div class="gamecontainer" id="Check_For_Nul">
 
     <!--    Main Text-->
     <h1>Keep Potato-Head Alive!🥔</h1>
@@ -25,7 +26,7 @@
 
     <!--Stat divs-->
     <div class="Stats">
-        <div class="HPStat">
+        <div class="HPStat" id="HPStat">
             HP: 100/100
         </div>
         <div class="HungerStat" id="HungerStat">
@@ -71,6 +72,7 @@
 <script src="scripts/message.js"></script>
 <script src="scripts/EnergyBar.js"></script>
 <script src="scripts/Central_Image_Handler.js"></script>
+<script src="scripts/Health_Decrease.js"></script>
 
 <script>
 

@@ -9,6 +9,7 @@ let MaxObesity = 100;
 const hungerStatDiv = document.getElementById("HungerStat")
 const obesityStatDiv = document.getElementById("ObesityStat")
 
+
 // Update hunger with magic
 hungerStatDiv.innerText = `Hunger: ${currentHunger}/${MaxHunger}`;
 
