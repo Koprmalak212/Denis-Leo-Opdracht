@@ -2,6 +2,9 @@ let Count = 0
 
 
 function Alert(){
+    if (CurrentHP ===0){
+    
+    }
     if (Count ===0){
         Count++
     alert("Why would you try killing the potato, you heartless bastard?")}
