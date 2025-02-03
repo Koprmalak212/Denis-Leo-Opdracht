@@ -47,7 +47,7 @@ body{
 
 .gamecontainer{
     /*margin-bottom: 20vh;*/
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(4px);
     width: 40vw;
     height: 87vh;
     border: 5px solid black;
