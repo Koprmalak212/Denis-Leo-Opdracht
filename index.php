@@ -61,7 +61,7 @@
               fill="#d1f1ff" stroke="#a7e0ff" stroke-width="2"/>
         <!-- Text inside the bubble -->
         <text id="message" x="20" y="60" font-size="24" font-family="Arial, sans-serif" fill="#000">
-            Hello, this is a test!
+          DenisHardCodedMe!-10SocialCredits
         </text>
     </svg>
 
