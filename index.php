@@ -8,6 +8,13 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
+
+<div class="Video" id="Vid">
+    <video  id="Video"  height="100%" width="100%" > </video>
+
+</div>
+
+
 <div class="Buttons">
     <div class="Button1" id="FeedButton" onclick="increaseHunger(10)">Feed</div>
     <div class="Button1" id="RestButton" onclick="increaseEnergy(10)">Rest</div>
@@ -53,6 +60,8 @@
     <div class="Button1" id="KillButton" onclick="Alert()">Kill ;</div>
 
 </div>
+
+
 
 <div class="messageBox">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100" width="300" height="100">

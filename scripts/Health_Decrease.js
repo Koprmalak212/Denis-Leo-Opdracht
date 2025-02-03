@@ -9,6 +9,8 @@ healthSound.preload = "auto"; // Preload for better performance
 // Get references to the HTML elements for displaying health stats and checking for null values
 const HealthStatDiv = document.getElementById("HPStat");
 const CheckForNul = document.getElementById("Check_For_Nul");
+const Video = document.getElementById("Video");
+const VidDiv = document.getElementById("Vid");
 
 // Set an attribute "Nul" to "0" on the CheckForNul element and log its value to the console
 CheckForNul.setAttribute("Nul", "0");
@@ -27,7 +29,15 @@ function DecreaseHP(amount) {
     if (CurrentHP > 0) {
         // Play sound effect
         healthSound.currentTime = 0; // Restart the sound to prevent delay
-        healthSound.play();
+        healthSound.play()
+    }else if (CurrentHP === 0 ){
+        Video.load()
+        Video.src = "Video_and_audio/Jumpscare.mp4"
+        VidDiv.style.display = "block"
+        VidDiv.style.zIndex = "1"
+        Video.currentTime = 0;
+        clearInterval(interval);
+        Video.play();
     }
 
     // Calculate the current HP percentage
@@ -41,12 +51,14 @@ function DecreaseHP(amount) {
 
     // Update the background gradient to reflect the current HP percentage
     HealthStatDiv.style.background = `linear-gradient(to right, #f196a4 ${hpPercentage}%, #ac7a7a ${hpPercentage}%)`;
+
 }
 
 // Set an interval to periodically check and decrease HP based on other conditions
-setInterval(function () {
+let interval = setInterval(function () {
     // Check various conditions and decrease HP accordingly
-    if (currentEnergy === 0 && currentHunger === 0 && currentFun === 0) {
+
+    if (currentEnergy === 0 && currentHunger === 0 && currentFun === 0 ) {
         DecreaseHP(5);
     } else if (currentEnergy === 0 && currentHunger === 0) {
         DecreaseHP(3);
@@ -58,3 +70,4 @@ setInterval(function () {
         DecreaseHP(1);
     }
 }, 1000); // The interval is set to 1000 milliseconds (1 second)
+

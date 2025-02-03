@@ -67,6 +67,7 @@ function decrease_Obesity() {
 }
 
 function Handler(amount) {
+
     decreaseHunger(amount);
     decrease_Obesity();
 }
