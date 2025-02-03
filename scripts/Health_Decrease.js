@@ -11,6 +11,8 @@ const HealthStatDiv = document.getElementById("HPStat");
 const CheckForNul = document.getElementById("Check_For_Nul");
 const Video = document.getElementById("Video");
 const VidDiv = document.getElementById("Vid");
+const Video2 = document.getElementById("Video2");
+const VidDiv2 = document.getElementById("Vid2");
 
 // Set an attribute "Nul" to "0" on the CheckForNul element and log its value to the console
 CheckForNul.setAttribute("Nul", "0");
@@ -31,13 +33,13 @@ function DecreaseHP(amount) {
         healthSound.currentTime = 0; // Restart the sound to prevent delay
         healthSound.play()
     }else if (CurrentHP === 0 ){
-        Video.load()
-        Video.src = "Video_and_audio/Jumpscare.mp4"
-        VidDiv.style.display = "block"
-        VidDiv.style.zIndex = "1"
-        Video.currentTime = 0;
+        Video2.src = Jumpscare;
+        Video2.load();
+        VidDiv2.style.display = "block"
+        VidDiv2.style.zIndex = "1"
+        Video2.currentTime = 0;
         clearInterval(interval);
-        Video.play();
+        Video2.play();
     }
 
     // Calculate the current HP percentage

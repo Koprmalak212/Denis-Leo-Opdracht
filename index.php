@@ -10,10 +10,12 @@
 <body>
 
 <div class="Video" id="Vid">
-    <video  id="Video"  height="100%" width="100%" > </video>
-
+    <video  id="Video" class="Vid"  height="100%" width="100%" > </video>
 </div>
 
+<div class="Video" id="Vid2">
+    <video  id="Video2" class="Vid"  height="100%" width="100%" > </video>
+</div>
 
 <div class="Buttons">
     <div class="Button1" id="FeedButton" onclick="increaseHunger(10)">Feed</div>
@@ -57,7 +59,7 @@
 
 <div class="Buttons">
     <div class="Button1" id="PlayButton" onclick="increaseFun(10)" >Play</div>
-    <div class="Button1" id="KillButton" onclick="Alert()">Kill ;</div>
+    <div class="Button1" id="KillButton" onclick="Alert()">Kill</div>
 
 </div>
 

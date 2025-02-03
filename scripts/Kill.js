@@ -1,9 +1,10 @@
 let Count = 0
 const Jumpscare = "Video_and_audio/Jumpscare.mp4"
 const Paint_dry = "Video_and_audio/PaintDry.mp4"
-const Video = document.getElementById("Video")
-const VidDiv = document.getElementById("Vid")
-
+let Video1 = document.getElementById("Video")
+let VidDiv1 = document.getElementById("Vid")
+Video1.src = Paint_dry
+Video1.load()
 
 function Alert(){
     if (CurrentHP ===0){
@@ -22,11 +23,11 @@ function Alert(){
     }else if (Count===3){
         alert('I warned you...')
         alert("You are now being sentenced with watching paint dry.")
-        Video.src = Paint_dry
-        VidDiv.style.display = "block"
-        VidDiv.style.zIndex = "1"
-        Video.currentTime = 0;
-        Video.play()
+
+        VidDiv1.style.display = "block"
+        VidDiv1.style.zIndex = "1"
+        Video1.currentTime = 0;
+        Video1.play()
 
     }
 }
