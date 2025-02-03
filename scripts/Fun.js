@@ -32,7 +32,7 @@ function increaseFun(amount) {
     currentFun = Math.min(100, currentFun + amount);
     FunStatDiv.innerText = `Fun: ${currentFun}/${MaxFun}`;
     console.log("New Fun: " + currentFun);}
-    else  if (currentFun >= 80) {
+      if (currentFun >= 80) {
         increaseBrainRot(5);
     }
 }

@@ -32,7 +32,7 @@ function increaseHunger(amount) {
     hungerStatDiv.innerText = `Hunger: ${currentHunger}/${MaxHunger}`;
     console.log("New Hunger: " + currentHunger);}
 
-   else if (currentHunger >= 80) {
+    if (currentHunger >= 80 && CurrentHP !== 0) {
         increaseObesity(5);
 
 }
