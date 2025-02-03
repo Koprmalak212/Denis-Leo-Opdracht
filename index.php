@@ -74,9 +74,7 @@
 <script src="scripts/Central_Image_Handler.js"></script>
 <script src="scripts/Health_Decrease.js"></script>
 <script src="scripts/Kill.js"></script>
-<script>
 
-</script>
 
 </body>
 
