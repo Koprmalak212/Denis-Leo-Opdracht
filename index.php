@@ -85,7 +85,20 @@
 <script src="scripts/Central_Image_Handler.js"></script>
 <script src="scripts/Health_Decrease.js"></script>
 <script src="scripts/Kill.js"></script>
+<script>
+    document.addEventListener("click",function playAudioOnClickOnce(){
+        let music = new Audio('Video_and_audio/music.mp3')
+        music.play()
+        console.log("wa")
+        document.removeEventListener("click",playAudioOnClickOnce)
+        setInterval(function(){
+            if (CurrentHP===0 || Count ===3){
+                music.pause()
+            }
+        })
+    })
 
+</script>
 
 </body>
 
